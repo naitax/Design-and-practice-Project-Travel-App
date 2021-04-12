@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "908648566075",
+    "project_id": "design-and-practice-travel-app",
+    "storage_bucket": "design-and-practice-travel-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908648566075:android:664d70a065d17737727b1e",
+        "android_client_info": {
+          "package_name": "com.example.travel_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908648566075-8sbibkfhnf1hcl41bshv5rj48dnr3k38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.travel_app",
+            "certificate_hash": "82d67bfa9d193cd3f450e58f7da8a19747e8f24c"
+          }
+        },
+        {
+          "client_id": "908648566075-st5o8hn86prc8903vdgi18eru41vaud4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVMektvt1jTy-b6bqZaql6UOKmQiw2EXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908648566075-st5o8hn86prc8903vdgi18eru41vaud4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,6 +12,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
+
     return Container(
       height: 75,
       width: double.infinity,
@@ -57,13 +58,16 @@ class NavItem extends StatelessWidget {
   const NavItem({
     Key key,
     @required this.icon,
-    @required this.isActive
+    @required this.isActive, this.page
   }) : super(key: key);
 
   final String icon;
   final bool isActive;
+  final Widget page;
+
 
   @override
+
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
