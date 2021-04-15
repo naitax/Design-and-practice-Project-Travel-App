@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class Point {
   final double x;
@@ -17,13 +18,13 @@ class BackgroundPainter extends CustomPainter {
 
   BackgroundPainter()
       : bluePaint = Paint()
-          ..color = Colors.lightBlue.shade300
+    ..color = HexColor("#f2ad73")
           ..style = PaintingStyle.fill,
         greyPaint = Paint()
-          ..color = Colors.blueGrey[900]
+          ..color = HexColor("#ffa345")
           ..style = PaintingStyle.fill,
         orangePaint = Paint()
-          ..color = Colors.orange.shade400
+          ..color = HexColor("#624185")
           ..style = PaintingStyle.fill,
         linePaint = Paint()
           ..color = Colors.orange[300]
