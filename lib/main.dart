@@ -1,12 +1,16 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:travel_app/Screens/home/home.dart';
+import 'package:travel_app/Screens/onboarding_screen.dart';
 import 'package:travel_app/constants.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
 import 'Screens/login/first_screen.dart';
+import 'Screens/test_login/page/home_page.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   debugPaintSizeEnabled = false; // Set to true for visual layout
   runApp(MyApp());
 }
@@ -26,14 +30,16 @@ class MyApp extends StatelessWidget {
             GoogleFonts.merriweatherTextTheme(Theme.of(context).textTheme),
       ),
       home: //// HomeScreen(),
+      /*
        Scaffold(
           appBar: AppBar(
           title: Text(''),
           toolbarHeight: 5,
           backgroundColor: Colors.white,
           ),
-    body: FirstScreen(),
-       ),
-    );
+
+       */
+      OnboardingScreen(),
+       );
   }
 }

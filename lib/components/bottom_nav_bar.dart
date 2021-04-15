@@ -3,6 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:travel_app/constants.dart';
 import 'package:travel_app/responsive.dart';
 
+
+
+
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
     Key key,
@@ -96,6 +99,8 @@ class NavItem extends StatelessWidget {
     );
   }
 }
+
+
 
 
 

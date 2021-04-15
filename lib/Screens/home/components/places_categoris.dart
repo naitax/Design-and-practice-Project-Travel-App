@@ -47,6 +47,9 @@ class _PlacesCategoriesState extends State<PlacesCategories> {
           }
         ),
       ),
+
     );
   }
 }
+
+

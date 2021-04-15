@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class UserAvatar extends StatelessWidget {
@@ -7,8 +8,14 @@ class UserAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final user = FirebaseAuth.instance.currentUser;
+
     return IconButton(
-      icon: ClipOval(child: Image.asset('assets/images/avatar.png')),
+      icon: CircleAvatar(
+        maxRadius: 25,
+        backgroundImage: NetworkImage(user.photoURL),
+      ),
       onPressed: () {}
     );
   }

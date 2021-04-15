@@ -29,7 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^2.0.0 # this will help us to include google fonts
-  flutter_svg: ^0.19.3 # this will help us to render svg
+  flutter_svg: ^0.21.0+1 # this will help us to render svg
   smooth_star_rating: ^1.1.1 # this will help us to add star rating system
   delayed_display: ^1.1.0 # this will help us to add animations
   blurrycontainer: ^0.0.1
@@ -41,9 +41,27 @@ dependencies:
   # google sing in
   firebase_auth: ^1.0.3
   google_sign_in: ^5.0.1
+  firebase_core: ^1.0.3
 
   # state management
   provider: ^5.0.0
+
+  # google maps
+  google_maps_flutter: ^2.0.3
+  geolocator: ^7.0.3
+  flutter_icons: ^1.0.0+1
+
+  #splash screen
+  flutter_native_splash: ^1.1.7+1
+
+  #sign in buttons
+  flutter_signin_button: ^2.0.0
+
+flutter_native_splash:
+  color: "#32b3a4"
+  image: assets/images/images/2.png
+  android: true
+  ios: true
 
 dev_dependencies:
   flutter_test:

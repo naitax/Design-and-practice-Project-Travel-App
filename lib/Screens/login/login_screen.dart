@@ -6,6 +6,7 @@ import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
 import 'package:travel_app/Screens/home/home.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:travel_app/Screens/home/main_screen.dart';
 import 'package:travel_app/Screens/login/provider/google_sign_in.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -169,7 +170,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) {
-                                return HomeScreen();
+                                return MainScreen();
                               }),
                             );
                           },
