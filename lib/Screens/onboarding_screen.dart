@@ -4,6 +4,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:travel_app/Screens/login/first_screen.dart';
 import 'package:travel_app/Screens/login/login_screen.dart';
 
+import 'home/main_screen.dart';
 import 'test_login/page/home_page.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -64,7 +65,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 Container(
                   alignment: Alignment.centerRight,
                   child: FlatButton(
-                    onPressed: () => print('Skip'),
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) {
+                        //return LoginScreen();
+                        return MainScreen();
+                      }),
+                    ),
+
                     child: Text(
                       'Skip',
                       style: TextStyle(
@@ -269,7 +277,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               context,
               MaterialPageRoute(builder: (context) {
                 //return LoginScreen();
-                return HomePage();
+                return FirstScreen();
               }),
             );
           } ,

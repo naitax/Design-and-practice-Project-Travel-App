@@ -6,6 +6,8 @@ import 'package:travel_app/constants.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
 import 'Screens/login/first_screen.dart';
+import 'Screens/login/login_screen.dart';
+import 'Screens/login/register_screen.dart';
 import 'Screens/test_login/page/home_page.dart';
 
 Future main() async {
@@ -39,6 +41,7 @@ class MyApp extends StatelessWidget {
           ),
 
        */
+
       OnboardingScreen(),
        );
   }

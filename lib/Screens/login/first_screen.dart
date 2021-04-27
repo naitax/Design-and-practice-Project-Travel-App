@@ -1,12 +1,16 @@
+import 'package:animations/animations.dart';
+import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:travel_app/Screens/home/main_screen.dart';
 import 'package:travel_app/Screens/login/provider/google_sign_in.dart';
 import 'provider/widgets/background_painter.dart';
 import 'provider/widgets/google_sign_in_button.dart';
 import 'provider/widgets/login_widget.dart';
 
-
+/*
 class FirstScreen extends StatelessWidget {
 
   @override
@@ -76,7 +80,9 @@ class SignUpWidget extends StatelessWidget {
 }
 
 
-/*
+ */
+
+
 class FirstScreen extends StatefulWidget {
   @override
   _FirstScreenState createState() => _FirstScreenState();
@@ -112,7 +118,7 @@ class _FirstScreenState extends State<FirstScreen> {
                               ),
                               curve: Curves.fastOutSlowIn,
                               child: BlurryContainer(
-                                height: 550,
+                                height: 350,
                                 bgColor: _color,
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -137,115 +143,90 @@ class _FirstScreenState extends State<FirstScreen> {
                                               letterSpacing: 0.5),
                                         ),
                                         SizedBox(height: 40,),
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Align(
-                                            alignment: Alignment.center,
-                                            child: Text(
-                                              'Explore popular places of United Kingdom and \n'
-                                                  'find nearby hotels and restaurants with the \neasiest way.'
-                                                  ' Get real time directions, estimated\n cost and much more...',
-                                              style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontWeight: FontWeight.w100,
-                                                  height: 1.5,
-                                                  fontSize: 15,
-                                                  letterSpacing: 0.5),
+                                        ButtonTheme(
+                                          height: 55,
+                                          child: RaisedButton(
+                                            onPressed: () {},
+                                            color: Colors.white,
+                                            elevation: 3,
+                                            shape: RoundedRectangleBorder(
+                                              borderRadius: BorderRadius.circular(15.0),
+                                            ),
+                                            child: Container(
+                                              width: 280,
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                children: [
+                                                  FaIcon(FontAwesomeIcons.google, color: Colors.red),
+                                                  Text(
+                                                    'Sign up with Google',
+                                                    style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontWeight: FontWeight.w500,
+                                                        fontSize: 20),
+                                                  ),
+                                                ],
+                                              ),
                                             ),
                                           ),
                                         ),
-                                        SizedBox(height: 40,),
-                                        Container(
-                                            width: 350.0,
-                                            child: Align(
-                                              alignment: Alignment.center,
-                                              child: RaisedButton(
-                                                shape: RoundedRectangleBorder(
-                                                    borderRadius: new BorderRadius
-                                                        .circular(30.0)),
-                                                color: Color(0xffffffff),
-                                                child: Row(
-                                                  mainAxisAlignment: MainAxisAlignment
-                                                      .start,
-                                                  children: <Widget>[
-                                                    Icon(FontAwesomeIcons.google,
-                                                      color: Color(0xffCE107C),),
-                                                    SizedBox(width: 10.0),
-                                                    Text(
-                                                      'Sign in with Google',
-                                                      style: TextStyle(
-                                                          color: Colors.black,
-                                                          fontSize: 18.0),
-                                                    ),
-                                                  ],),
-                                                onPressed: () {
-                                                  final provider =
-                                                  Provider.of<GoogleSignInProvider>(context, listen: false);
-                                                  provider.login();
-                                                },
+
+                                        SizedBox(height: 10,),
+
+                                        ButtonTheme(
+                                          height: 55,
+                                          child: RaisedButton(
+                                            onPressed: () {},
+                                            color: Colors.white,
+                                            elevation: 3,
+                                            shape: RoundedRectangleBorder(
+                                              borderRadius: BorderRadius.circular(15.0),
+                                            ),
+                                            child: Container(
+                                              width: 280,
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                children: [
+                                                  FaIcon(FontAwesomeIcons.facebook, color: Colors.blue),
+                                                  Text(
+                                                    'Sign up with Facebook',
+                                                    style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontWeight: FontWeight.w500,
+                                                        fontSize: 20),
+                                                  ),
+                                                ],
                                               ),
-                                            )
+                                            ),
+                                          ),
                                         ),
 
-                                        SizedBox(height: 18,),
+                                        SizedBox(height: 10,),
 
-                                        Container(
-                                            width: 350.0,
-                                            child: Align(
-                                              alignment: Alignment.center,
-                                              child: RaisedButton(
-                                                shape: RoundedRectangleBorder(
-                                                    borderRadius: new BorderRadius
-                                                        .circular(30.0)),
-                                                color: Color(0xffffffff),
-                                                child: Row(
-                                                  mainAxisAlignment: MainAxisAlignment
-                                                      .start,
-                                                  children: <Widget>[
-                                                    Icon(FontAwesomeIcons.facebookF,
-                                                      color: Color(0xff4754de),),
-                                                    SizedBox(width: 10.0),
-                                                    Text(
-                                                      'Sign in with Facebook',
-                                                      style: TextStyle(
-                                                          color: Colors.black,
-                                                          fontSize: 18.0),
-                                                    ),
-                                                  ],),
-                                                onPressed: () {},
+
+                                        SizedBox(height: 10,),
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 270.0),
+                                          child: Container(
+                                            alignment: Alignment.centerRight,
+                                            child: FlatButton(
+                                              onPressed: () => Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) {
+                                                  //return LoginScreen();
+                                                  return MainScreen();
+                                                }),
                                               ),
-                                            )
-                                        ),
 
-                                        SizedBox(height: 18,),
-
-                                        Container(
-                                            width: 350.0,
-                                            child: Align(
-                                              alignment: Alignment.center,
-                                              child: RaisedButton(
-                                                shape: RoundedRectangleBorder(
-                                                    borderRadius: new BorderRadius
-                                                        .circular(30.0)),
-                                                color: Color(0xffffffff),
-                                                child: Row(
-                                                  mainAxisAlignment: MainAxisAlignment
-                                                      .spaceBetween,
-                                                  children: <Widget>[
-                                                    Icon(FontAwesomeIcons
-                                                        .solidEnvelope,
-                                                      color: Color(0xff4caf50),),
-                                                    SizedBox(width: 10.0),
-                                                    Text(
-                                                      'Sign in with Email',
-                                                      style: TextStyle(
-                                                          color: Colors.black,
-                                                          fontSize: 18.0),
-                                                    ),
-                                                  ],),
-                                                onPressed: () {},
+                                              child: Text(
+                                                'Skip',
+                                                style: TextStyle(
+                                                  color: Colors.orange,
+                                                  fontSize: 20.0,
+                                                ),
                                               ),
-                                            )
+                                            ),
+                                          ),
                                         ),
 
                                       ],
@@ -348,8 +329,11 @@ class _FirstScreenState extends State<FirstScreen> {
   // The List.generate() constructor allows an easy way to create
   // a list when objects have a predictable naming pattern.
   List<Container> _buildGridTileList(int count) => List.generate(
-      count, (i) => Container(child: Image.asset('assets/images/images/pic$i.jpg')));
+      count, (i) => Container(
+      child: Container(
+          child: ClipRRect(
+              borderRadius: BorderRadius.circular(10.0),
+              child: Image.asset('assets/images/images/pic$i.jpg')))));
 }
 
 
- */

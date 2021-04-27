@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/Screens/calendar/calendar_screen.dart';
+import 'package:travel_app/Screens/calendar/lib/calendar_screen.dart';
+import 'package:travel_app/Screens/destination/home.dart';
+import 'package:travel_app/Screens/map/mapscreen.dart';
 import 'package:travel_app/Screens/profile/profile_screen.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:travel_app/components/app_bar.dart';
 import 'home.dart';
 
 class MainScreen extends StatefulWidget {
@@ -14,7 +17,9 @@ class _MainScreenState extends State<MainScreen> {
 
   List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    CalendarScreen(),
+    DestinationScreen(),
+    CalendarPage(),
+    MapScreen(),
     ProfileScreen(),
   ];
   @override
@@ -39,6 +44,17 @@ class _MainScreenState extends State<MainScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
+              Feather.search,
+              color: Colors.grey,
+            ),
+            title: Text('HOME'),
+            activeIcon: Icon(
+              Feather.search,
+              color: Colors.purple,
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
               FontAwesome.calendar,
               color: Colors.grey,
             ),
@@ -46,6 +62,19 @@ class _MainScreenState extends State<MainScreen> {
             activeIcon: Icon(
               FontAwesome.calendar,
               color: Colors.purple,
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              EvilIcons.location,
+              color: Colors.grey,
+              size: 36,
+            ),
+            title: Text('PROFILE'),
+            activeIcon: Icon(
+              EvilIcons.location,
+              color: Colors.purple,
+              size: 36,
             ),
           ),
           BottomNavigationBarItem(

@@ -16,7 +16,7 @@ class _PlacesCategoriesState extends State<PlacesCategories> {
 
   @override
   Widget build(BuildContext context) {
-    List<String> placesCategoris = ["Popular", "Featured", "Most Visited", "Europe", "Asia", "Africa", "America", "Australia"];
+    List<String> placesCategoris = ["Popular Places"];
 
     return Padding(
       padding: EdgeInsets.all(30),
@@ -34,12 +34,15 @@ class _PlacesCategoriesState extends State<PlacesCategories> {
               },
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Text(
-                  placesCategoris[index],
-                  style: TextStyle(
-                    fontSize: isTab(context) ? 24 : 16,
-                    color: selectedIndex == index ? kPrimaryColor : kTextColor,
-                    fontWeight: selectedIndex == index ? FontWeight.bold : FontWeight.normal
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    placesCategoris[index],
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: selectedIndex == index ? kPrimaryColor : kTextColor,
+                      fontWeight: selectedIndex == index ? FontWeight.bold : FontWeight.normal
+                    ),
                   ),
                 ),
               ),

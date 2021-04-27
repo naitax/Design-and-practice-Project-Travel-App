@@ -14,7 +14,7 @@ class UserAvatar extends StatelessWidget {
     return IconButton(
       icon: CircleAvatar(
         maxRadius: 25,
-        backgroundImage: NetworkImage(user.photoURL),
+
       ),
       onPressed: () {}
     );

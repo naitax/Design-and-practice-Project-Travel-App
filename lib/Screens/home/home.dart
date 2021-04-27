@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/Screens/home/components/current_location.dart';
+import 'package:travel_app/Screens/home/components/daily_deals.dart';
 import 'package:travel_app/Screens/home/components/feautured_places.dart';
+import 'package:travel_app/Screens/home/components/five_star_hotel_list.dart';
 import 'package:travel_app/Screens/home/components/location.dart';
 import 'package:travel_app/Screens/home/components/map_widget.dart';
 import 'package:travel_app/Screens/home/components/places_categoris.dart';
@@ -34,8 +36,10 @@ class HomeScreen extends StatelessWidget {
             //FeaturedPlaces(),
             //CurrentLocation(),
             //Location(),
+            DailyDealsScreen(),
             Recommended(),
-            RecommendedPlaces()
+            RecommendedPlaces(),
+            FiveStarHotels(),
           ],
         ),
       ),
