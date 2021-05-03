@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:travel_app/Screens/login/first_screen.dart';
-import 'package:travel_app/Screens/login/login_screen.dart';
+
 
 import 'home/main_screen.dart';
-import 'test_login/page/home_page.dart';
+
 
 class OnboardingScreen extends StatefulWidget {
   @override
@@ -207,9 +207,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             Align(
                               alignment: Alignment.center,
                               child: Text(
-                                'jsdfgsdgudsugudsagfuibdhvbhgfhsdv'
-                                    'dvshafhv'
-                                    'asvhjia',
+                                'Which travel destination best fits '
+                                    'your personality?',
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w300,
