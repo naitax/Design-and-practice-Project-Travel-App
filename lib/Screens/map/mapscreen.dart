@@ -19,7 +19,6 @@ class _MapScreenState extends State<MapScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     coffeeShops.forEach((element) {
       allMarkers.add(Marker(
@@ -51,7 +50,7 @@ class _MapScreenState extends State<MapScreen> {
         }
         return Center(
           child: SizedBox(
-            height: Curves.easeInOut.transform(value) * 125.0,
+            height: Curves.easeInOut.transform(value) * 150.0,
             width: Curves.easeInOut.transform(value) * 350.0,
             child: widget,
           ),
@@ -68,7 +67,7 @@ class _MapScreenState extends State<MapScreen> {
                       horizontal: 10.0,
                       vertical: 20.0,
                     ),
-                    height: 125.0,
+                    height: 145.0,
                     width: 275.0,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
@@ -85,7 +84,7 @@ class _MapScreenState extends State<MapScreen> {
                             color: Colors.white),
                         child: Row(children: [
                           Container(
-                              height: 90.0,
+                              height: 110.0,
                               width: 90.0,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
@@ -137,11 +136,11 @@ class _MapScreenState extends State<MapScreen> {
         body: Stack(
           children: <Widget>[
             Container(
-              height: MediaQuery.of(context).size.height - 50.0,
+              height: MediaQuery.of(context).size.height - 40.0,
               width: MediaQuery.of(context).size.width,
               child: GoogleMap(
                 initialCameraPosition: CameraPosition(
-                    target: LatLng(40.7128, -74.0060), zoom: 12.0),
+                    target: LatLng(51.5064722, -0.1557469), zoom: 12.0),
                 markers: Set.from(allMarkers),
                 onMapCreated: mapCreated,
               ),

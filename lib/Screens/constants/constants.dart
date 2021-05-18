@@ -5,8 +5,8 @@ class Constants {
 
   static List<DailyDeals>getDailyDealsList(){
     return[
+      DailyDeals('assets/images/goaBeach.jpg','London Travel Package','5 Stars','London', '4.9','(569 reviews)','Book & save 20%!'),
       DailyDeals('assets/images/goaBeach.jpg','Bilagio','5 Stars','Las vegas', '4.9','(569 reviews)','Book & save 20%!'),
-      DailyDeals('assets/images/getRadyForSummer.jpg','Bilagio','5 Stars','Las vegas', '4.9','(569 reviews)','Book & save 20%!'),
       DailyDeals('assets/images/goaBeach.jpg','Bilagio','5 Stars','Las vegas', '4.9','(569 reviews)','Book & save 20%!'),
     ];
   }

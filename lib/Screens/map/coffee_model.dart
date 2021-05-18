@@ -17,43 +17,43 @@ class Coffee {
 
 final List<Coffee> coffeeShops = [
   Coffee(
-      shopName: 'Stumptown Coffee Roasters',
-      address: '18 W 29th St',
+      shopName: 'The British Museum',
+      address: 'Great Rusell St, London',
       description:
-      'Coffee bar chain offering house-roasted direct-trade coffee, along with brewing gear & whole beans',
-      locationCoords: LatLng(40.745803, -73.988213),
-      thumbNail: 'https://lh5.googleusercontent.com/p/AF1QipNNzoa4RVMeOisc0vQ5m3Z7aKet5353lu0Aah0a=w90-h90-n-k-no'
+      'Huge showcase for global antiquities, including Egyptian mummies and ancient Greek sculptures.',
+      locationCoords: LatLng(51.5064722,-0.1557469),
+      thumbNail: 'https://lh5.googleusercontent.com/p/AF1QipN507h8euodRM1TDdcl8ka1EtnHYOigTsebYXJe=w408-h314-k-no'
   ),
   Coffee(
-      shopName: 'Andrews Coffee Shop',
-      address: '463 7th Ave',
+      shopName: 'Museum of London',
+      address: '150 London Wall',
       description:
-      'All-day American comfort eats in a basic diner-style setting',
-      locationCoords: LatLng(40.751908, -73.989804),
-      thumbNail: 'https://lh5.googleusercontent.com/p/AF1QipOfv3DSTkjsgvwCsUe_flDr4DBXneEVR1hWQCvR=w90-h90-n-k-no'
+      'Artifacts and interactives chronicle London\'s turbulent history from pre-Roman to modern times.',
+      locationCoords: LatLng(51.5142673,-0.1030029),
+      thumbNail: 'https://lh5.googleusercontent.com/p/AF1QipOezb8X7t32hvef7pKpBStgYwwKSE6VsbSdxgy5=w408-h270-k-no'
   ),
   Coffee(
-      shopName: 'Third Rail Coffee',
-      address: '240 Sullivan St',
+      shopName: 'BigBen',
+      address: 'Palace of Westminster',
       description:
-      'Small spot draws serious caffeine lovers with wide selection of brews & baked goods.',
-      locationCoords: LatLng(40.730148, -73.999639),
-      thumbNail: 'https://lh5.googleusercontent.com/p/AF1QipPGoxAP7eK6C44vSIx4SdhXdp78qiZz2qKp8-o1=w90-h90-n-k-no'
+      '16-storey Gothic clocktower and national symbol at the Eastern end of the Houses of Parliament.',
+      locationCoords: LatLng(51.5004821,-0.1257627),
+      thumbNail: 'https://lh5.googleusercontent.com/p/AF1QipMzlsXUt4HcMwgvgY7U9s8rZjCZpP2OdbLgPwa_=w408-h257-k-no'
   ),
   Coffee(
-      shopName: 'Hi-Collar',
-      address: '214 E 10th St',
+      shopName: 'Natural History Museum',
+      address: 'Cromwell Rd',
       description:
-      'Snazzy, compact Japanese cafe showcasing high-end coffee & sandwiches, plus sake & beer at night.',
-      locationCoords: LatLng(40.729515, -73.985927),
-      thumbNail: 'https://lh5.googleusercontent.com/p/AF1QipNhygtMc1wNzN4n6txZLzIhgJ-QZ044R4axyFZX=w90-h90-n-k-no'
+      'Landmark museum of animals and natural phenomena, with hands-on exhibits and animatronic dinosaurs.',
+      locationCoords: LatLng(51.495941,-0.1785822),
+      thumbNail: 'https://lh5.googleusercontent.com/p/AF1QipOkzmfiMj00hbJ4YFOjlxIFvjYOLXG6KaKYdpKB=w408-h300-k-no'
   ),
   Coffee(
-      shopName: 'Everyman Espresso',
-      address: '301 W Broadway',
+      shopName: 'Victoria and Albert Museum',
+      address: 'Cromwell Rd, London',
       description:
-      'Compact coffee & espresso bar turning out drinks made from direct-trade beans in a low-key setting.',
-      locationCoords: LatLng(40.721622, -74.004308),
-      thumbNail: 'https://lh5.googleusercontent.com/p/AF1QipOMNvnrTlesBJwUcVVFBqVF-KnMVlJMi7_uU6lZ=w90-h90-n-k-no'
+      'Blockbuster exhibitions and permanent decorative arts collection, with design shop and ornate cafe.',
+      locationCoords: LatLng(51.4966392,-0.1809347),
+      thumbNail: 'https://lh3.googleusercontent.com/proxy/qVHdhaGYDjxkBlT3AR8DoLgr0jxhq9h9BcO_aOFUXQqWXlzZvpbX9dR9PeZ0SKt5p9DghIRymljfz4Mm4eXoieba3jZfCIDK4tLTcGKZuTUVGSj1iU1aITusL54OCNpEX88Ij46eAs3_5HrbaAxXdKBhgeHocA=w408-h272-k-no'
   )
 ];
